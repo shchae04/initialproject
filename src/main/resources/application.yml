@@ -1,0 +1,39 @@
+
+# MyBatis
+# mapper.xml ?? ??
+#mybatis.mapper-locations: mybatis-mapper/**/*.xml
+
+# model ???? camel case ??
+#mybatis.configuration.map-underscore-to-camel-case=true
+
+# ??? ?? ??? ? ??? alias ??
+#mybatis.type-aliases-package=com.com.csh.study.domain
+
+# mapper ???? ??
+#logging.level.com.csh.study.mapper=TRACE
+
+#spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+#spring.datasource.url=jdbc:oracle:thin:@localhost:1521/xe
+#spring.datasource.username=c##study
+#spring.datasource.password=study
+
+
+# yml ??? ????? ?? ?? ??? ????? ***.
+spring:
+
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: c##study
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    password: study
+mybatis:
+mapper-locations: mybatis-mapper/**/*.xml
+configuration:
+map-underscore-to-camel-case: 'true'
+type-aliases-package: com.com.csh.study.domain
+logging:
+level:
+com:
+csh:
+study:
+mapper: TRACE
